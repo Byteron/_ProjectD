@@ -36,6 +36,7 @@
     <ClCompile Include="node.cpp" />
     <ClCompile Include="potion.cpp" />
     <ClCompile Include="spell.cpp" />
+    <ClCompile Include="statefight.cpp" />
     <ClCompile Include="trinket.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
@@ -49,12 +50,14 @@
     <ClInclude Include="effect.h" />
     <ClInclude Include="form.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="gamestate.h" />
     <ClInclude Include="generator.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="log.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="potion.h" />
     <ClInclude Include="spell.h" />
+    <ClInclude Include="statefight.h" />
     <ClInclude Include="trinket.h" />
     <ClInclude Include="weapon.h" />
   </ItemGroup>

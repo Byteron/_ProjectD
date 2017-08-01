@@ -50,6 +50,8 @@ public:
 	Node getNode(unsigned short slot);
 	float getResistanceModificator(NATURE nature);
 	Spell* getSpell(size_t spell_index);
+	Effects* getEffects() { return &effects_; }
+	
 	// Setter
 	void setHp(int hp);
 

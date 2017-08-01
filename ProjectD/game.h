@@ -18,6 +18,7 @@
 #include "character.h"
 #include "generator.h"
 #include "effect.h"
+#include "statefight.h"
 
 class Game {
 private:
@@ -30,13 +31,12 @@ public:
 private:
 	void initialize();
 	void frame();
-	void quit();
+	void quit() { running_ = false; };
 
 public:
 	void run() {
 		initialize();
 		while (running_)
 			frame();
-		quit();
 	}
 };

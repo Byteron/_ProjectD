@@ -20,8 +20,11 @@ void Game::frame()
 	enemy->print();
 	player->castSpell(0, enemy);
 	enemy->print();
-	cin.get();
-	running_ = false;
-}
+	vector<Actor*> characters;
+	characters.push_back(player);
+	characters.push_back(enemy);
 
-void Game::quit() {}
+	StateFight* fight = new StateFight(characters);
+	fight->run();
+	quit();
+}

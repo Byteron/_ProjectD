@@ -17,6 +17,12 @@
     <Filter Include="Source Files\Game">
       <UniqueIdentifier>{70fb4172-938a-4e70-a1dd-4eee7a13272c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Game\Generators">
+      <UniqueIdentifier>{8c6b4c13-8895-439e-b3ff-6f5e4f028ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Gamestates">
+      <UniqueIdentifier>{b089f7dc-785a-436f-87df-9f83afa08f63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -58,9 +64,6 @@
     <ClCompile Include="log.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
-    <ClCompile Include="generator.cpp">
-      <Filter>Source Files\Game</Filter>
-    </ClCompile>
     <ClCompile Include="container.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
@@ -76,15 +79,18 @@
     <ClCompile Include="spell.cpp">
       <Filter>Source Files\Magic</Filter>
     </ClCompile>
+    <ClCompile Include="generator.cpp">
+      <Filter>Source Files\Game\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="statefight.cpp">
+      <Filter>Source Files\Game\Gamestates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="spell.h">
       <Filter>Source Files\Magic</Filter>
     </ClInclude>
     <ClInclude Include="log.h">
-      <Filter>Source Files\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="generator.h">
       <Filter>Source Files\Game</Filter>
     </ClInclude>
     <ClInclude Include="game.h">
@@ -128,6 +134,15 @@
     </ClInclude>
     <ClInclude Include="armor.h">
       <Filter>Source Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="generator.h">
+      <Filter>Source Files\Game\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="gamestate.h">
+      <Filter>Source Files\Game\Gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="statefight.h">
+      <Filter>Source Files\Game\Gamestates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
